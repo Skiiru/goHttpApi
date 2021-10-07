@@ -13,6 +13,6 @@ type Route struct {
 
 func GetRoutes() []Route {
 	return []Route{
-		{Path: "/api/v1/first", Method: "Get", Callback: routes.First},
+		{Path: "/api/v1/hello", Method: "Get", Callback: routes.Hello},
 	}
 }
