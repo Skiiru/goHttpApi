@@ -1,8 +1,8 @@
 package main
 
 import (
-	"first/internal/web"
 	"github.com/gofiber/fiber/v2"
+	"goHttpApi/internal/web"
 	"reflect"
 )
 

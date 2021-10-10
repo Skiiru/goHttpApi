@@ -1,8 +1,8 @@
 package web
 
 import (
-	"first/internal/web/routes"
 	"github.com/gofiber/fiber/v2"
+	"goHttpApi/internal/web/routes"
 )
 
 type Route struct {
@@ -14,5 +14,6 @@ type Route struct {
 func GetRoutes() []Route {
 	return []Route{
 		{Path: "/api/v1/hello", Method: "Get", Callback: routes.Hello},
+		{Path: "/api/v1/method", Method: "Post", Callback: routes.Method},
 	}
 }
